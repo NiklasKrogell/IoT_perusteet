@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Niklas Krogell",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": { "env": "micropython-20241129-v1.24.1" }
+    },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": -92, "left": 136.62, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 82.8,
+      "left": 167,
+      "rotate": 180,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "pir1:VCC", "pico:3V3", "red", [ "v0" ] ],
+    [ "pir1:OUT", "pico:GP0", "green", [ "v9.6", "h-38.54", "v-38.4", "h-182.12", "v41.65" ] ],
+    [ "pir1:GND", "pico:GND.8", "black", [ "v0" ] ],
+    [ "led1:A", "pico:GP16", "green", [ "h-38", "v101.2", "h-28.8", "v3.21" ] ],
+    [ "led1:C", "pico:GND.8", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
