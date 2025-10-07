@@ -7,7 +7,8 @@ For testing our api's, we used **Postman**.
 
 ## Full IoT pipeline
 The last project I made in this course was a full IoT pipeline, where my simulated Pico W (Wokwi) sends temperature and humidity data to ThingSpeak-backend.\
-From there, my frontend made with Google charts fetches the data and displays it in a linechart.
+From there, my frontend made with Google charts fetches the data and displays it in a linechart.\
+I made it possible to change the amount of datapoints fetched.
 
 ## Links to my Wokwi projects:
 - [Led with button](https://wokwi.com/projects/442338368556839937) 
