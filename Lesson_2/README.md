@@ -4,11 +4,7 @@ We also made a **backend with ThingSpeak**, and learned how to send data from a 
 and our own simple backend with **node.js** with a GET-endpoint that shows hard coded dummydata.\
 
 ## Dependencies
-To make the simple node server run, you have to initialize node and install **express**.
-
-```powershell
-npm init -y
-```
+To make the simple node server run, you have to  install **express**.
 
 ```powershell
 npm install express
